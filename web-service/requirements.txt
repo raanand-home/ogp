@@ -1,0 +1,9 @@
+celery
+ipython
+pytest
+requests
+lxml
+connexion
+git+git://github.com/josiahcarlson/rom.git
+celery[redis]
+redis==2.10.6

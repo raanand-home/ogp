@@ -1,0 +1,7 @@
+celery
+redis==2.10.6
+flower
+celery[redis]
+requests
+lxml
+rom

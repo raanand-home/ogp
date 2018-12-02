@@ -1,0 +1,44 @@
+swagger: "2.0"
+
+info:
+  title: "title"
+  version: "1.0"
+
+paths:
+  /health:
+    get:
+      operationId: api.api.health
+      responses:
+          200:
+            description: greeting response
+            schema:
+              type: string
+  /stories:
+    post: 
+      operationId: api.api.request_story
+      parameters:
+        - name: url
+          in: query
+          description: Url_to_query
+          required: true
+          type: string
+      responses:
+        200:
+          description: greeting response
+          schema:
+            type: string
+  /stories/{id}:
+    get:
+      operationId: api.api.query_story
+      parameters:
+        - name: id
+          in: path
+          description: url_id
+          required: true
+          type: string
+      responses:
+        200:
+          description: greeting response
+          schema:
+            type: string
+
