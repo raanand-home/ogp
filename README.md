@@ -36,11 +36,11 @@ which is not clear how the requested json format can support it without adding e
 ```
 
 ## Installation Guide
-* install docker;
-* make build ;
+* install docker and docker-compose
+* make build;
+* docker-compose build 
 * docker-compose up -d 
-* iptables -A PREROUTING -t nat -p tcp --dport 80 -j REDIRECT --to-port 8080
-* sudo iptables -t nat -A OUTPUT -o lo -p tcp --dport 80 -j REDIRECT --to-port 5001
+
 
 
 
